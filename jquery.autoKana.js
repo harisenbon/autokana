@@ -82,7 +82,9 @@
                     }
                 } else {
                     if (values.length == input.length && values.join('') != input) {
-                        _stateConvert();
+                        if (input.match(kana_extraction_pattern)) {
+                            _stateConvert();
+                        }
                     }
                 }
             }
