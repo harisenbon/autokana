@@ -1,4 +1,4 @@
-﻿autokana
+autokana
 ========
 
 Library for automatically rendering Furigana for inputed Japanese Text.
@@ -18,9 +18,9 @@ This allows Japanese users to automatically input the furigana for their name wi
 
 Based on Rubricks' autoRuby.js prototype project: http://d.hatena.ne.jp/rubricks/20080702/1215003705
 
-第一変数のJqueryセレクターにキーダウンリスナーをバインドして、入力された文字をフリガナとして第２変数のJqueryセレクターに自動的に入力する。
+第１変数のJqueryセレクターにキーダウンリスナーをバインドして、入力された文字をフリガナとして第２変数のJqueryセレクターに自動的に入力する。
 
-RubricksのautoRuby.jsをベースにしました。Prototype版が必要でありましたら、そちらへご参考：
+RubricksのautoRuby.jsをベースにしました。Prototype版が必要でしたら、こちらを参照してください：
 http://d.hatena.ne.jp/rubricks/20080702/1215003705
 
 
@@ -34,7 +34,7 @@ Usage
 
 * 名前とフリガナのフィールドエレメントをプラグインに定義：
 * $.fn.autoKana('#UserName', '#UserFurigana');
-* katakana:trueのオプションを定義する場合、フリガナがカタカナに変換されませす。
+* katakana:trueのオプションを定義した場合、フリガナがカタカナに変換されます。
 * $.fn.autoKana('#UserName', '#UserFurigana', {katakana:true});
 
 Issues
@@ -44,7 +44,7 @@ Issues
 * For obvious reasons, getting the Furigana of copy/pasted text is not supported
 * English characters are not currently supported
 
-* 第一フィールドから削除されたカナがフリガナのフィールドにも反映しますが、削除された漢字が反映されない。なので、hiddenフィールドを避けることがお勧め
+* 入力欄から文字を削除した場合、カナはフリガナのフィールドからも削除されますが、入力された文字が漢字だった場合は、文字を削除しても、この通りに反映されない
 * keydownを利用しているので、コピペされたテキストは非対応
 * ローマ字は非対応
 
