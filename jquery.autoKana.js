@@ -131,7 +131,7 @@
             return ((chara >= 12353 && chara <= 12435) || chara == 12445 || chara == 12446);
         };
         function _removeString(new_input) {
-            if (new_input.match(ignoreString)) {
+            if (new_input.match(_escapeRegExp(ignoreString))) {
                 return new_input.replace(ignoreString, '');
             } else {
                 var i, ignoreArray, inputArray;
@@ -193,6 +193,10 @@
             } else {
                 return src;
             }
+        }
+        // From: http://stackoverflow.com/questions/3446170/escape-string-for-use-in-javascript-regex
+        function _escapeRegExp(str) {
+            return str.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&");
         }
     };
 })(jQuery);
