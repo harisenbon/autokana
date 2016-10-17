@@ -131,7 +131,7 @@
             return ((chara >= 12353 && chara <= 12435) || chara == 12445 || chara == 12446);
         };
         function _removeString(new_input) {
-            if (new_input.match(ignoreString)) {
+            if (new_input.indexOf(ignoreString) !== -1) {
                 return new_input.replace(ignoreString, '');
             } else {
                 var i, ignoreArray, inputArray;
