@@ -1,0 +1,24 @@
+{
+  "name": "jquery.autokana",
+  "version": "1.0.0",
+  "description": "Library for automatically rendering Furigana for inputed Japanese Text.",
+  "main": "jquery.autoKana.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harisenbon/autokana.git"
+  },
+  "keywords": [
+    "jquery",
+    "plugin",
+    "autokana"
+  ],
+  "author": "Keith Perhac",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/harisenbon/autokana/issues"
+  },
+  "homepage": "https://github.com/harisenbon/autokana#readme"
+}
