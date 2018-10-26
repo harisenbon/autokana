@@ -156,7 +156,7 @@
                 }
                 if (active) {
                     var _val = _toKatakana(baseKana + values.join(''));
-                    elKana.val(_val);
+                    elKana.val(_val).change();
                 }
             }
         };
