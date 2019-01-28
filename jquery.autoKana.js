@@ -93,9 +93,10 @@
         function _checkValue() {
             var new_input, new_values;
             new_input = elName.val()
-            if (new_input == '') {
+            if (new_input == '' && !flagConvert) {
                 _stateClear();
-                _setKana();
+                _checkConvert('');
+                _setKana('');
             } else {
                 new_input = _removeString(new_input);
                 if (input == new_input) {
