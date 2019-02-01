@@ -93,7 +93,7 @@
         function _checkValue() {
             var new_input, new_values;
             new_input = elName.val()
-            if (new_input == '') {
+            if (new_input == '' && elKana.val() != '') {
                 _stateClear();
                 _setKana();
             } else {
