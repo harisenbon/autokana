@@ -30,7 +30,7 @@
                 'katakana': false
             }, passedOptions);
 
-        var kana_extraction_pattern = new RegExp('[^ 　ぁあ-んー]', 'g');
+        var kana_extraction_pattern = new RegExp('[^ 　ぁあ-んー０-９－0-9-]', 'g');
         var kana_compacting_pattern = new RegExp('[ぁぃぅぇぉっゃゅょ]', 'g');
         var elName,
             elKana,
